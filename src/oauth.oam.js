@@ -30,7 +30,7 @@
 
             console.log("URL: " + event.url);
 
-            if(event.url.indexOf("login.html?") > -1 && flagProceso == false) {
+            if(event.url.indexOf("login.html?") > -1 && flagProceso === false) {
               // Primera vez
               console.log("LOGIN INIT");
               flagProceso = true;
