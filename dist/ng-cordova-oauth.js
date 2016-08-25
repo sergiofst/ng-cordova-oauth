@@ -1451,7 +1451,7 @@
 
             console.log("URL: " + event.url);
 
-            if(event.url.indexOf("login.html?") > -1 && flagProceso === false) {
+            if(event.url.indexOf("login.html") > -1 && flagProceso === false) {
               // Primera vez
               console.log("LOGIN INIT");
               flagProceso = true;
@@ -1466,7 +1466,7 @@
               console.log("LOGIN OK!!!");
               deferred.resolve();
               browserRef.close();
-            } else if(event.url.indexOf("login.html?") > -1 && flagProceso) {
+            } else if(event.url.indexOf("login.html") > -1 && flagProceso) {
               // Si entre a login estoy en proceso de login
               console.log("LOGIN ERROR!!!");
               deferred.reject();
